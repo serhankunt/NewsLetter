@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>80fb1c94-4c1d-4e7a-8631-8f54b07ba119</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewsLetter.Application\NewsLetter.Application.csproj" />
+    <ProjectReference Include="..\NewsLetter.Domain\NewsLetter.Domain.csproj" />
+    <ProjectReference Include="..\NewsLetter.Infrastructure\NewsLetter.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
